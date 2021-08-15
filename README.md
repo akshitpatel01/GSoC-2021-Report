@@ -12,7 +12,7 @@ The project aims to do the following:
 - Add support for ns-3’s built-in logging to SEM. We aim to provide an API which enables users to select the log components and their respective log severity classes to enable while running ns-3 simulations using SEM. 
 - Add an interactive dashboard with different filters to efficiently visualize the ns-3 logs. This dashboard API is independent to the SEM logging module and hence allows the users to pass in any ns-3 generated log file (i.e. the users can pass a log file generated directly from SEM or manually by ns-3). 
 
-The Project ws divided into four phases:
+The Project was divided into four phases:
 - **Phase 1**: Modify the existing run_missing_simulations API to add logging support in SEM along with tests and documentation of the functions added/modified.
 - **Phase 2**: Add APIs to read, parse and filter logs from an ns-3 generated log file along with an API to insert the parsed logs to a TinyDB database instance.
 - **Phase 3**: Build frontend as well as backend components for interactive dashboard.
@@ -20,10 +20,31 @@ The Project ws divided into four phases:
 
 For detailed design and implementation of each phase please refer to the [Design Document](https://docs.google.com/document/d/1GWQFEF1my4VmCnKayGZGYj6lwtYFQeE5qFI5emJlbOw/edit#).
 
-##### Phase 1: Add logging support to SEM
+## Project Contributions
+This section covers the work done during the GSoC Period in terms of contributed code/documentation/tests.
+
+### Phase 1: Add logging support to SEM
 **Link to phase 1 PR**:
 
 [https://github.com/signetlabdei/sem/pull/47](https://github.com/signetlabdei/sem/pull/47)
+
+### Phase 2: Add APIs to read, parse, insert and filter logs
+**Link to phase 2 PR**:
+
+[https://github.com/signetlabdei/sem/pull/51](https://github.com/signetlabdei/sem/pull/51)
+
+
+### Phase 3: Build an interactive dashboard 
+**Link to phase 3 PR**:
+
+[https://github.com/signetlabdei/sem/pull/54](https://github.com/signetlabdei/sem/pull/54)
+
+## Final status of SEM
+
+## Future Work
+
+## Conclusion
+
 
 
 
