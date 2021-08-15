@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+# Add logging support to Simulation Execution Manager (SEM)
+This page summarizes the work done as part of Google Summer of Code 2021 with with the [ns-3](https://gitlab.com/nsnam) Network Simulator.
 
-You can use the [editor on GitHub](https://github.com/akshitpatel01/GSoC-2021-Report/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+### Project Overview
+Simulation Execution Manager (SEM) is a Python library to perform multiple ns-3 script executions, manage the results and collect them in processing-friendly data structures. SEM tries to hide as many of the tedious details about running a simulation campaign as possible, providing a clean interface that helps the user get all the way from optimized compilation of ns-3 to plotting.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+###### Initial status of SEM: 
+At the time of starting this project, SEM did not provide an API or support for enabling logging in ns-3 simulations. Apart from this, SEM also did not have any support for visualization of ns-3 logs. Despite having no explicit support for logging, the users were still able to enable logging manually in their ns-3 scripts by using LogComponentEnable(). 
 
-### Markdown
+###### Project Goal: 
+The project aims to do the following:
+- Add support for ns-3’s built-in logging to SEM. 
+- Add an interactive dashboard with different filters to efficiently visualize the ns-3 logs.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/akshitpatel01/GSoC-2021-Report/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
