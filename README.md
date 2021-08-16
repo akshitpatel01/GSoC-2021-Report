@@ -28,6 +28,12 @@ This section covers the work done during the GSoC Period in terms of contributed
 
 [https://github.com/signetlabdei/sem/pull/47](https://github.com/signetlabdei/sem/pull/47)
 
+After discussing with the mentors on a detailed flow for phase 1, we modified the existing SEM run_missing_simulations API to allow the users to enable logging. SEM would also keep a track of logging simulatins in addition to non-logging simulations in its internal database. Towards the end of first phase, we added an example to demonstrte the new changes to SEM, tests (in pytest framework) to validate the changes and python docstrings for the documentation.
+
+**Weekly progress for phase 1**: 
+
+
+
 ### Phase 2: Add APIs to read, parse, insert and filter logs
 **Link to phase 2 PR**:
 
