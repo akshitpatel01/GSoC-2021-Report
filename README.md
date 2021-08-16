@@ -47,7 +47,9 @@ This phase focusses on creating APIs dedicated towards parsing the log files pas
 **Weekly progress for phase 2**
 
 - **Week 4**: Added regex for validating and parsing the logs from the provided log file. Added API to insert parsed logs into a database.
+ 
 - **Week 5**: Added an API to query the database based on the filters passed. Added an example to demonstrate the new APIs and test to validate the new changes.
+
 - **Week 6**: Performed profiling experiments on these new APIs as these functions are designed to be used by backend. Found that these APIs take an infeasible amount of time to run and modified the APIs to reduce the time taken to execute. 
 
 
