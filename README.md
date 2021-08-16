@@ -60,11 +60,15 @@ This phase focusses on creating APIs dedicated towards parsing the log files pas
 
 This phase focusses on creating a interactive dashboard for visualizing ns-3 log files. The frontend of the dashboard is built using html, css and JQuery. The dasboard has two main components 1) Graph 2) Table. Two Jquery based libraries have been used to create the dasboard: 1) chart.js (for graph) 2) Datatables (for table). For the backend, flask has been used. The backend also makes use of the APIs written in phase 2. For a complete overview of the features of the dashboard, refer [here]().  
 
-**Weekly progress for phase 2**
+**Weekly progress for phase 3**
 
-- **Week 7**: 
-- **Week 8**: 
-- **Week 9**:
+- **Week 7**: Created a basic flask app for backend and linked it with a sample table created using datatables in the frontend. 
+
+- **Week 8**: Worked on APIs for frontend to communicate with the backend. Added dropdown filters in the frontend for better log visualization. 
+
+- **Week 9**: Added the graph for visualizing the logs against time. Added APIs to accomodate the new frontend components. 
+
+- **Week 10**: Worked on improving the performance of the dashboard. Created a markdown file listing the features of the current dashboard. 
 
 ## Final status of SEM
 
