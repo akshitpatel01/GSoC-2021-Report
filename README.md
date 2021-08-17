@@ -72,7 +72,7 @@ This phase focusses on creating a interactive dashboard for visualizing ns-3 log
 
 - **Week 9**: Added the graph for visualizing the logs against time. Added APIs to accomodate the new frontend components. 
 
-- **Week 10**: Worked on improving the performance and features of the dashboard. Created a markdown file listing the features of the current dashboard. 
+- **Week 10**: Worked on improving the performance and features of the dashboard. Created a markdown file listing the features of the current dashboard. Added an example to demonstrate the use of dashboard. 
 
 
 ## Final status of SEM 
