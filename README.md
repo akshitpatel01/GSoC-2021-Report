@@ -89,9 +89,10 @@ After discussion with the mentors, possible future work for SEM is as follows:
 
 - **Add support for custom context in SEM**: Provide support for custom context created by users (using NS_LOG_APPEND_CONTEXT). Currently, ns-3 allows users to redifine/use NS_LOG_APPEND_CONTEXT and add custom string to the logs. As there is no clear start and end marks for the extended context, this task is yet to be done.
 
+I will gladly help if any issues come up with the new code added.
 
 ## Conclusion
-
+I am very thankfull to my family, mentors and the ns-3 community who helped and supported me throughout GSoC. Though my project comes to an end, I will keep contributing to open source as well as SEM. 
 
 
 
