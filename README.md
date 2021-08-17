@@ -1,6 +1,10 @@
 # Add logging support to Simulation Execution Manager (SEM)
 This page summarizes the work done as part of Google Summer of Code 2021 with with the [ns-3](https://gitlab.com/nsnam) Network Simulator.
 
+Student: Akshit Patel
+
+Mentors: Davide Magrin, Mattia Lecci
+
 ## Project Overview
 Simulation Execution Manager (SEM) is a Python library to perform multiple ns-3 script executions, manage the results and collect them in processing-friendly data structures. SEM tries to hide as many of the tedious details about running a simulation campaign as possible, providing a clean interface that helps the user get all the way from optimized compilation of ns-3 to plotting.
 
@@ -92,7 +96,7 @@ After discussion with the mentors, possible future work for SEM is as follows:
 I will gladly help if any issues come up with the new code added.
 
 ## Conclusion
-I am very thankfull to my family, mentors and the ns-3 community who helped and supported me throughout GSoC. Though my project comes to an end, I will keep contributing to open source as well as SEM. 
+I am very thankfull to my family, mentors and the ns-3 community who helped and supported me throughout GSoC. I am also thankfull to Dr. Mohit P. Tahiliani for encouraging me to apply for the program. Though my project comes to an end, I will keep contributing to open source as well as SEM. 
 
 
 
