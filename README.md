@@ -1,15 +1,15 @@
 # Add logging support to Simulation Execution Manager (SEM)
 This page summarizes the work done as part of Google Summer of Code 2021 with with the [ns-3](https://gitlab.com/nsnam) Network Simulator.
 
-Student: Akshit Patel
+Student: [Akshit Patel](https://github.com/akshitpatel01)
 
-Mentors: Davide Magrin, Mattia Lecci
+Mentors: [Davide Magrin](https://github.com/DvdMgr), [Mattia Lecci](https://github.com/mattia-lecci)
 
 ## Project Overview
-Simulation Execution Manager (SEM) is a Python library to perform multiple ns-3 script executions, manage the results and collect them in processing-friendly data structures. SEM tries to hide as many of the tedious details about running a simulation campaign as possible, providing a clean interface that helps the user get all the way from optimized compilation of ns-3 to plotting.
+[Simulation Execution Manager (SEM)](https://github.com/signetlabdei/sem) is a Python library to perform multiple ns-3 script executions, manage the results and collect them in processing-friendly data structures. SEM tries to hide as many of the tedious details about running a simulation campaign as possible, providing a clean interface that helps the user get all the way from optimized compilation of ns-3 to plotting.
 
 ### Initial status of SEM: 
-At the time of starting this project, SEM did not provide an API or support for enabling logging in ns-3 simulations. Apart from this, SEM also did not have any support for visualization of ns-3 logs. Despite having no explicit support for logging, the users were still able to enable logging manually in their ns-3 scripts by using LogComponentEnable(). 
+At the time of starting this project, SEM did not provide an API or support for enabling logging in ns-3 simulations. Apart from this, SEM also did not have any support for visualization of ns-3 logs. Despite having no explicit support for logging, the users were still able to enable logging manually in their ns-3 scripts by using/redifinning [LogComponentEnable()](https://www.nsnam.org/doxygen/group__logging.html#gabe50035652d407c40bdaef78214c4955). 
 
 ### Project Goal: 
 The project aims to do the following:
@@ -30,7 +30,7 @@ This section covers the work done during the GSoC Period in terms of contributed
 
 [https://github.com/signetlabdei/sem/pull/47](https://github.com/signetlabdei/sem/pull/47)
 
-After discussing with the mentors on a detailed flow for phase 1, we modified the existing SEM run_missing_simulations API to allow the users to enable logging. SEM would also keep a track of logging simulatins in addition to non-logging simulations in its internal database. Towards the end of first phase, we added an example to demonstrte the new changes to SEM, tests (in pytest framework) to validate the changes and python docstrings for the documentation.
+After discussing with the mentors on a detailed flow for phase 1, we modified the existing SEM [run_missing_simulations](https://simulationexecutionmanager.readthedocs.io/en/develop/api.html#sem.CampaignManager.run_missing_simulations) API to allow the users to enable logging. SEM would also keep a track of logging simulatins in addition to non-logging simulations in its internal database. Towards the end of first phase, we added an [example](https://github.com/akshitpatel01/sem/blob/gsoc2021/examples/logging_example.py) to demonstrate the new changes to SEM, tests (in pytest framework) to validate the changes and python docstrings for the documentation.
 
 **Weekly progress for phase 1**
 
@@ -46,7 +46,7 @@ After discussing with the mentors on a detailed flow for phase 1, we modified th
 
 [https://github.com/signetlabdei/sem/pull/51](https://github.com/signetlabdei/sem/pull/51)
 
-This phase focusses on creating APIs dedicated towards parsing the log files passed in by the user. These APIs allow the user to filter log files based on 1) Time 2) Context 3) Function 4) Component. Also the APIs created in this phase will be used by backend of the dashboard created in next phase. Towards the end of second phase, we added an example to demonstrte the new changes to SEM, tests (in pytest framework) to validate the changes and python docstrings for the documentation.
+This phase focusses on creating APIs dedicated towards parsing the log files passed in by the user. These APIs allow the user to filter log files based on 1) Time 2) Context 3) Function 4) Component. Also the APIs created in this phase will be used by backend of the dashboard created in next phase. Towards the end of second phase, we added an [example](https://github.com/akshitpatel01/sem/blob/gsoc2021/examples/logging_example2.py) to demonstrate the new changes to SEM, tests (in pytest framework) to validate the changes and python docstrings for the documentation.
 
 **Weekly progress for phase 2**
 
@@ -54,7 +54,7 @@ This phase focusses on creating APIs dedicated towards parsing the log files pas
  
 - **Week 5**: Added an API to query the database based on the filters passed. Added an example to demonstrate the new APIs and test to validate the new changes.
 
-- **Week 6**: Performed profiling experiments on these new APIs as these functions are designed to be used by backend. Found that these APIs take an infeasible amount of time to run and modified the APIs to reduce the time taken to execute. 
+- **Week 6**: Performed [profiling experiments](https://github.com/akshitpatel01/sem/tree/profiling/profiling) on these new APIs as these functions are designed to be used by backend. Found that these APIs take an infeasible amount of time to run and tuned the APIs to reduce the time taken to execute. 
 
 
 ### Phase 3: Build an interactive dashboard 
@@ -62,7 +62,7 @@ This phase focusses on creating APIs dedicated towards parsing the log files pas
 
 [https://github.com/signetlabdei/sem/pull/54](https://github.com/signetlabdei/sem/pull/54)
 
-This phase focusses on creating a interactive dashboard for visualizing ns-3 log files. The frontend of the dashboard is built using html, css and JQuery. The dasboard has two main components 1) Graph 2) Table. Two Jquery based libraries have been used to create the dasboard: 1) chart.js (for graph) 2) Datatables (for table). For the backend, flask has been used. The backend also makes use of the APIs written in phase 2. For a complete overview of the features of the dashboard, refer [here]().  At the time of writing this report, this PR is yet to be merged. 
+This phase focusses on creating a interactive dashboard for visualizing ns-3 log files. The frontend of the dashboard is built using html, css and JQuery. The dasboard has two main components 1) Graph 2) Table. Two Jquery based libraries have been used to create the dasboard: 1) [chart.js](https://www.chartjs.org/) (for graph) 2) [Datatables](https://datatables.net/) (for table). For the backend, [flask](https://flask.palletsprojects.com/en/2.0.x/) has been used. The backend also makes use of the APIs written in phase 2. For a complete overview of the features of the dashboard, refer [here](https://github.com/akshitpatel01/sem/blob/gsoc2021/sem/dashboard/README.md).  At the time of writing this report, the phase 3 PR is yet to be merged. 
 
 **Weekly progress for phase 3**
 
@@ -72,7 +72,7 @@ This phase focusses on creating a interactive dashboard for visualizing ns-3 log
 
 - **Week 9**: Added the graph for visualizing the logs against time. Added APIs to accomodate the new frontend components. 
 
-- **Week 10**: Worked on improving the performance and features of the dashboard. Created a markdown file listing the features of the current dashboard. Added an example to demonstrate the use of dashboard. 
+- **Week 10**: Worked on improving the performance and features of the dashboard. Created a markdown file listing the features of the current dashboard. Added an [example](https://github.com/akshitpatel01/sem/blob/gsoc2021/examples/logging_example2.py) to demonstrate the use of dashboard. 
 
 
 ## Final status of SEM 
@@ -89,7 +89,7 @@ After discussion with the mentors, possible future work for SEM is as follows:
 
 - **Add support for logging and accessing the dashboard from SEM-CLI**: As this task could not completed at the time of writing this report, it will be done after GSoC ends.
 
-- **Add support for time filtering of logs in ns-3**: Ns-3 does not support time filtering of logs as of now. This feature will be useful for the users as the log files generated by ns-3 can be huge and this might directly affect the responsiveness of the SEM dashboard. For this task Mattia Lecci has already opened up an MR (yet to be merged).  
+- **Add support for time filtering of logs in ns-3**: Ns-3 does not support time filtering of logs as of now. This feature will be useful for the users as the log files generated by ns-3 can be huge and this might directly affect the responsiveness of the SEM dashboard. For this task Mattia Lecci has already opened up an [MR](https://gitlab.com/nsnam/ns-3-dev/-/merge_requests/636) (yet to be merged).  
 
 - **Add support for custom context in SEM**: Provide support for custom context created by users (using NS_LOG_APPEND_CONTEXT). Currently, ns-3 allows users to redifine/use NS_LOG_APPEND_CONTEXT and add custom string to the logs. As there is no clear start and end marks for the extended context, this task is yet to be done.
 
