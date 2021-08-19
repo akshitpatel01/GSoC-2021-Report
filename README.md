@@ -23,7 +23,7 @@ The Project was divided into four phases:
 - **Phase 4**: Add support for logging and accessing the dashboard from SEM-CLI. 
 
 ## Project Contributions
-This section covers the work done during the GSoC Period in terms of contributed code/documentation/tests. For detailed design and implementation of each phase please refer to the [Design Document](https://docs.google.com/document/d/1GWQFEF1my4VmCnKayGZGYj6lwtYFQeE5qFI5emJlbOw/edit#).
+This section covers the work done during the GSoC Period in terms of contributed code/documentation/tests. For detailed design and implementation of each phase please refer to the [Design Document](https://docs.google.com/document/d/1GWQFEF1my4VmCnKayGZGYj6lwtYFQeE5qFI5emJlbOw/edit?usp=sharing).
 
 ### Phase 1: Add logging support to SEM
 **Link to phase 1 PR**:
