@@ -9,7 +9,7 @@ Mentors: [Davide Magrin](https://github.com/DvdMgr), [Mattia Lecci](https://gith
 [Simulation Execution Manager (SEM)](https://github.com/signetlabdei/sem) is a Python library to perform multiple ns-3 script executions, manage the results and collect them in processing-friendly data structures. SEM tries to hide as many of the tedious details about running a simulation campaign as possible, providing a clean interface that helps the user get all the way from the optimized compilation of ns-3 to plotting.
 
 ### Initial status of SEM: 
-At the time of starting this project, SEM did not provide an API or support for enabling logging in ns-3 simulations. Apart from this, SEM also did not have any support for the visualization of ns-3 logs. Despite having no explicit support for logging, the users were still able to enable logging manually in their ns-3 scripts by using/redefining [LogComponentEnable()](https://www.nsnam.org/doxygen/group__logging.html#gabe50035652d407c40bdaef78214c4955). 
+At the time of starting this project, SEM did not provide an API or support for enabling logging in ns-3 simulations. Apart from this, SEM also did not have any support for the visualization of ns-3 logs. Despite having no explicit support for logging, the users were still able to enable logging manually in their ns-3 scripts by using/redefining [```LogComponentEnable()```](https://www.nsnam.org/doxygen/group__logging.html#gabe50035652d407c40bdaef78214c4955). 
 
 ### Project Goal: 
 The project aims to do the following:
